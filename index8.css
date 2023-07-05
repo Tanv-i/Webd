@@ -1,0 +1,13 @@
+.container {
+    box-sizing: border-box;
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 60px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}

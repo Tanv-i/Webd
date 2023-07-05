@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Pressure Details</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-image: url("https://plus.unsplash.com/premium_photo-1664116707675-6cde0666eb3f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8N3x8c3RlYW18ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=1000&q=60");
+            background-size: cover;
+
+        }
+
+        h1 {
+            color: black;
+        }
+
+        .details-container {
+            margin-top: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        span {
+            color: yellow;
+        }
+
+        .details {
+            display: flex;
+            flex-direction: row;
+            margin-bottom: 10px;
+        }
+
+        .details span {
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Pressure Details</h1>
+
+    <div class="details-container">
+        <div class="details">
+            <span>Pressure:</span>
+            <span id="pressure-value"></span>
+        </div>
+
+        <div class="details">
+            <span>Unit:</span>
+            <span id="pressure-unit"></span>
+        </div>
+
+        <div class="details">
+            <span>Description:</span>
+            <span id="pressure-description"></span>
+        </div>
+    </div>
+
+    <script>
+        // Assume the pressure details are obtained from an API or other data source
+        var pressureData = {
+            value: 1013.25,
+            unit: "hPa",
+            description: "Normal atmospheric pressure"
+        };
+
+        // Update the HTML elements with the pressure details
+        document.getElementById("pressure-value").textContent = pressureData.value;
+        document.getElementById("pressure-unit").textContent = pressureData.unit;
+        document.getElementById("pressure-description").textContent = pressureData.description;
+    </script>
+</body>
+
+</html>

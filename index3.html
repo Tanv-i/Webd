@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Humidity Details</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-image: url("https://images.unsplash.com/photo-1592512220090-2bd9edaa6148?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTF8fGh1bWlkaXR5fGVufDB8fDB8fHww&auto=format&fit=crop&w=1000&q=60");
+            background-size: cover;
+        }
+
+        h1 {
+            color: darkgreen;
+        }
+
+        .details-container {
+            margin-top: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .details {
+            display: flex;
+            flex-direction: row;
+            margin-bottom: 10px;
+        }
+
+        .details span {
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Humidity Details</h1>
+
+    <div class="details-container">
+        <div class="details">
+            <span>Humidity:</span>
+            <span id="humidity-value"></span>
+        </div>
+
+        <div class="details">
+            <span>Unit:</span>
+            <span id="humidity-unit"></span>
+        </div>
+
+        <div class="details">
+            <span>Description:</span>
+            <span id="humidity-description"></span>
+        </div>
+    </div>
+
+    <script>
+        // Assume the humidity details are obtained from an API or other data source
+        var humidityData = {
+            value: 70,
+            unit: "%",
+            description: "Moderate humidity level"
+        };
+
+        // Update the HTML elements with the humidity details
+        document.getElementById("humidity-value").textContent = humidityData.value;
+        document.getElementById("humidity-unit").textContent = humidityData.unit;
+        document.getElementById("humidity-description").textContent = humidityData.description;
+    </script>
+</body>
+
+</html>

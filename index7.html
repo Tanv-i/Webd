@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Cloud Details</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-image: url("https://images.unsplash.com/photo-1580193769210-b8d1c049a7d9?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTh8fHdlYXRoZXJ8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=1000&q=60");
+            background-size: cover;
+        }
+
+        h1 {
+            color: black;
+        }
+
+        .details-container {
+            margin-top: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .details {
+            display: flex;
+            flex-direction: row;
+            margin-bottom: 10px;
+        }
+
+        .details span {
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Cloud Details</h1>
+
+    <div class="details-container">
+        <div class="details">
+            <span>Cloud Type:</span>
+            <span id="cloud-type"></span>
+        </div>
+
+        <div class="details">
+            <span>Altitude:</span>
+            <span id="cloud-altitude"></span>
+        </div>
+
+        <div class="details">
+            <span>Description:</span>
+            <span id="cloud-description"></span>
+        </div>
+    </div>
+
+    <script>
+        // Assume the cloud details are obtained from an API or other data source
+        var cloudData = {
+            type: "Cumulus",
+            altitude: "1,000 meters",
+            description: "Fluffy, white clouds"
+        };
+
+        // Update the HTML elements with the cloud details
+        document.getElementById("cloud-type").textContent = cloudData.type;
+        document.getElementById("cloud-altitude").textContent = cloudData.altitude;
+        document.getElementById("cloud-description").textContent = cloudData.description;
+    </script>
+</body>
+
+</html>

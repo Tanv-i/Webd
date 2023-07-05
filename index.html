@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Weather Application by Tanvi</title>
+  <link rel="stylesheet" href="style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Linking BoxIcon for Icon -->
+  <link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
+  <title>Gap Example</title>
+  <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+  <style>
+    .link-gap {
+      margin-right: 10px;
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      display: inline-block;
+      background-color: white;
+      color: black;
+      padding: 12px 24px;
+      font-size: 16px;
+      text-decoration: none;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+
+
+    .link-gap1 {
+      margin-right: 10px;
+      position: fixed;
+      bottom: 20px;
+      left: 20px;
+      display: inline-block;
+      background-color: white;
+      color: black;
+      padding: 12px 24px;
+      font-size: 16px;
+      text-decoration: none;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+
+    body {
+      background-image: url('https://images.unsplash.com/photo-1513002749550-c59d786b8e6c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=387&q=80');
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+
+    /* body {
+      position: relative;
+      min-height: 100vh;
+      margin: 0;
+      padding: 0;
+    } */
+
+    .corner-button-container {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+    }
+
+    .corner-button {
+      position: fixed;
+      top: 20px;
+      right: 20px;
+      background-color: #fff;
+      border: none;
+      color: #333;
+      padding: 10px 20px;
+      font-size: 16px;
+      border-radius: 5px;
+      box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+      z-index: 999;
+    }
+
+    .button-container {
+      position: fixed;
+      bottom: 20px;
+      left: 20px;
+    }
+
+    .button {
+      position: fixed;
+      top: 20px;
+      left: 20px;
+      display: inline-block;
+      background-color: white;
+      color: black;
+      padding: 12px 24px;
+      font-size: 16px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+
+    .search-box {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+    }
+
+    .search-box input[type="text"] {
+      padding: 10px;
+      width: 300px;
+      font-size: 16px;
+      border-radius: 5px;
+      border: none;
+      margin-bottom: 10px;
+    }
+
+    .search-box button {
+      padding: 10px 20px;
+      font-size: 16px;
+      border-radius: 5px;
+      border: none;
+      background-color: #333;
+      color: #fff;
+      cursor: pointer;
+    }
+
+    .highlight {
+      background-color: yellow;
+    }
+  </style>
+
+</head>
+
+
+<body>
+
+  <div class=" wrapper">
+    <a href="http://localhost:3001/" target="_blank">
+      <button class="center-button">
+        React app
+      </button>
+    </a>
+    <a href="http://localhost:3000/" target="_blank">
+      <button class="center2-button">
+        Forecast app
+      </button>
+    </a>
+
+    <header><i class='bx bx-left-arrow-alt'></i>Weather App</header>
+    <section class="input-part">
+      <p class="info-txt"></p>
+      <div class="content">
+        <input type="text" spellcheck="false" placeholder="Enter city name" required>
+        <div class="separator"></div>
+        <button onclick="redirectToPage()">Get Device Location</button>
+      </div>
+    </section>
+    <section class="weather-part">
+      <img src="" alt="Weather Icon">
+      <div class="temp">
+        <span class="numb">_</span>
+        <span class="deg">°</span>C
+      </div>
+      <div class="weather">_ _</div>
+      <div class="location">
+        <i class='bx bx-map'></i>
+        <span>_, _</span>
+      </div>
+      <div class="bottom-details">
+        <div class="column feels">
+          <i class='bx bxs-thermometer'></i>
+          <div class="details">
+            <div class="temp">
+              <span class="numb-2">_</span>
+              <span class="deg">°</span>C
+            </div>
+            <p>Feels like</p>
+          </div>
+        </div>
+        <div class="column humidity">
+          <i class='bx bxs-droplet-half'></i>
+          <div class="details">
+            <span>_</span>
+            <p>Humidity</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <a href="index2.html" class="link-gap" target="_blank">States</a>
+  <a href="index5.html" class="link-gap1" target="_blank">Weather</a><br>
+  <a href="index4.html" target="_blank">
+    <button id="myid" class="corner-button">
+      About
+    </Button></a><br>
+  <a href="index8.html" target="_blank">
+    <button class="button">
+      Settings
+    </Button></a><br>
+
+  <script src="index.js" target="_blank">
+  </script>
+  <script src="react/weather-app/Weather.js">W</script>
+  <script src="react/forecasty/src/App.js">f</script>
+</body>
+
+</html>
